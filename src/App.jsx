@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
 import "./App.css";
 
 function App() {
@@ -20,10 +21,25 @@ function App() {
 
   return (
     <>
-      <h1>dhdhd</h1>
-      {data.map((entry) => (
-        <div>{entry.title}</div>
-      ))}
+      <Navbar />
+      <div className="main">
+        {data.map((entry) => (
+          <div key={entry.id}>
+            <div className="entry">
+              <div className="triangle">&#9650;</div>
+              {entry.title}
+              <div className="url">{entry.url}</div>
+            </div>
+            <div className="entry_2">
+              <div>{entry.points} points</div>
+              <div>by {entry.author}</div>
+              <div>{entry.created_at} |</div>
+              <div> hide |</div>
+              <div>{entry.num_comments}</div>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
