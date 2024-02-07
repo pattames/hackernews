@@ -20,14 +20,14 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="mainContainer">
       <Navbar />
       <div className="main">
         {data.map((entry) => (
           <div key={entry.id}>
             <div className="entry">
               <div className="triangle">&#9650;</div>
-              {entry.title}
+              <a href={entry.url}>{entry.title}</a>
               <div className="url">{entry.url}</div>
             </div>
             <div className="entry_2">
@@ -40,7 +40,7 @@ function App() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
