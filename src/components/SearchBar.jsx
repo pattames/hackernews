@@ -1,7 +1,7 @@
 export default function SearchBar({ userInput, setUserInput }) {
   return (
     <>
-      <form action="">
+      <form className="searchBar" action="">
         <label htmlFor="searchbar">
           Searchbar
           <input

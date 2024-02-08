@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -22,7 +27,7 @@ a {
   background-color: #fb6600;
   justify-content: flex-start;
   align-items: center;
-  padding: 3px;
+  padding: 1rem;
   font-size: 20px;
 }
 
@@ -55,6 +60,7 @@ a {
   display: flex;
   column-gap: 5px;
   align-items: center;
+  padding-top: 0.5rem;
 }
 
 .entry_2 {
@@ -62,6 +68,8 @@ a {
   column-gap: 5px;
   align-items: center;
   color: grey;
+  padding-bottom: 0.5rem;
+  border-bottom: solid grey 1px;
 }
 .url {
   color: grey;
@@ -69,4 +77,52 @@ a {
 
 .triangle {
   color: gray;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+ol {
+  padding: 0 1rem;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f6f6ef;
+  border-bottom: solid 1px grey;
+}
+
+input {
+  margin-left: 1rem;
+}
+
+.footContainer {
+  background-color: #f6f6ef;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  gap: 0.5rem;
+  border-top: solid grey 3px;
+}
+
+.more {
+  font-size: 1.3rem;
+  margin: 1rem;
+  cursor: pointer;
+  max-width: 5rem;
+}
+
+.jokeContainer {
+  text-align: center;
+}
+
+.jokes {
+  padding: 0.7rem;
+  .mainJoke {
+    cursor: pointer;
+  }
 }
