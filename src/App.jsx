@@ -76,12 +76,16 @@ function App() {
         </p>
         {message ? (
           <div className="jokeContainer">
-            <h2>Enough news for you ! Time for some jokes</h2>
+            <h2>No pagination for you ! Time for some jokes</h2>
             <div className="jokes">
               <p className="mainJoke" onClick={() => setPunchline(!punchline)}>
-                Was kommt aus einer defekten Kaffeemaschine?
+                When I met a girl I liked, I used to put all my favorite things
+                about her surrounded by curly braces inside a Javascript file. I
+                feel bad about it in hindsight.
               </p>
-              {punchline ? <p>Ein Kaputtcino!</p> : null}
+              {punchline ? (
+                <p>-Now I know it's wrong to objectify women.</p>
+              ) : null}
             </div>
             <div className="jokes">
               <p
@@ -90,7 +94,7 @@ function App() {
               >
                 Why did the programmer quit his job?
               </p>
-              {punchline2 ? <p>He didn't get arrays!"</p> : null}
+              {punchline2 ? <p>-He didn't get arrays!"</p> : null}
             </div>
             <div className="jokes">
               <p
@@ -100,7 +104,7 @@ function App() {
                 Why was the JavaScript file so large?
               </p>
               {punchline3 ? (
-                <p>It had too many scripts to 'console.log' its feelings.</p>
+                <p>-It had too many scripts to 'console.log' its feelings.</p>
               ) : null}
             </div>
           </div>

@@ -118,6 +118,8 @@ input {
 
 .jokeContainer {
   text-align: center;
+  max-width: 60%;
+  margin: auto;
 }
 
 .jokes {
